@@ -1,0 +1,42 @@
+﻿<Page x:Class="Mağaza_yeni.sayfalar.KayitOlSayfa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mağaza_yeni.sayfalar"
+      mc:Ignorable="d" 
+      d:DesignHeight="950" d:DesignWidth="1519"
+      Title="KayitOlSayfa">
+
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="700"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="Green" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Label Content="Üye Kayıt Formu" Foreground="White" FontSize="40" />
+                <Label Content="Anasayfa / Üye Kayıt Formu" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
+            </StackPanel>
+           
+        </Border>
+        <Border Grid.Row="1">
+            <StackPanel Orientation="Vertical" Margin="200,50,200,0" Background="White" >
+                <Label Content="Üye Kayıt Formu" Margin="73,55,0,0" FontSize="20" HorizontalAlignment="Left"/>
+                <Label Content="Lütfen Tüm Alanları Doldurunuz" FontSize="16" Margin="76,0,0,0"  />
+                <Label Content="Kullanıcı Adı *" Margin="76,10,0,0" FontSize="16" FontFamily="Segoe UI Light" />
+                <TextBox x:Name="kullaniciAdiKayit" Height="34" Width="960" HorizontalAlignment="Left" Margin="76,0,0,0"/>
+                <Label Content="E-mail *" FontSize="16" FontFamily="Segoe UI Light" Margin="76,20,0,0"/>
+                <TextBox x:Name="emailKayit" Height="34" Width="960" HorizontalAlignment="Left" Margin="76,0,0,0"  />
+                <Label Content="Şifre *" FontSize="16" FontFamily="Segoe UI Light" Margin="76,20,0,0" />
+                <PasswordBox x:Name="sifreKayit" Height="34" Width="960" HorizontalAlignment="Left" Margin="76,0,0,0" />
+                <Label Content="Şifrenizi Onaylayın*" FontSize="16" FontFamily="Segoe UI Light" Margin="76,16,0,0"/>
+                <PasswordBox x:Name="sifreOnayKayit" Height="34" Width="960" HorizontalAlignment="Left" Margin="76,0,0,0" />
+                <Image Source="/resimler/şifrezoluğu.jpg" Margin="76,14,76.2,0" Height="38"/>
+                <Button x:Name="KayitOlKayit" Content="Kayıt Ol" Foreground="White" FontSize="16" Background="Green"  Margin="0,50,0,0" Height="48" Width="967" HorizontalAlignment="Center" FontWeight="Bold" />
+            </StackPanel>
+            
+        </Border>
+    </Grid>
+</Page>

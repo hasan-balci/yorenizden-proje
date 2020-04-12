@@ -1,0 +1,69 @@
+﻿<Page x:Class="Mağaza_yeni.urunler1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mağaza_yeni"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" 
+      Title="urunler1" Height="2478.554" Width="1544.582" Background="White"> 
+
+    <Grid Background="AliceBlue">
+        
+        <Grid.RowDefinitions  >
+
+           
+
+            
+            
+            <RowDefinition Height="1720" />
+
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="AliceBlue">
+            <ComboBox x:Name="Siralama" Height="32" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,78,0,0" SelectionChanged="Siralama_SelectionChanged" >
+                <ComboBoxItem >Varsayılan sıralama</ComboBoxItem>
+                <ComboBoxItem >En çok incelenene göre sırala</ComboBoxItem>
+                <ComboBoxItem >En çok o alana göre sırala</ComboBoxItem>
+                <ComboBoxItem >En yeniye göre sırala</ComboBoxItem>
+                <ComboBoxItem >En çok oy alana göre sırala</ComboBoxItem>
+                <ComboBoxItem >En yeniye göre sırala</ComboBoxItem>
+                <ComboBoxItem >Fiyata göre sırala: Düşükten yükseğe</ComboBoxItem>
+                <ComboBoxItem >Fiyata göre sırala: Yüksekten düşüğe</ComboBoxItem>
+            </ComboBox>
+
+        </Border>
+
+        <StackPanel Orientation="Horizontal" >
+            <StackPanel Orientation="Vertical" Background="White" Width="174" Height="300" Margin="120,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Button  Height="132" Background="White" BorderThickness="0" >
+                    <Image Source="C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\resimler\visne-receli-yorenizden.jpg" Height="250"/>
+                </Button>
+
+                <Label Content="Ev Yapımı Vişne Reçeli" HorizontalAlignment="Center" Margin="0,10,0,0" FontWeight="Bold" />
+
+                <Label Content="800 Gram" HorizontalAlignment="Center" FontWeight="Bold"  />
+
+                <Label Content="22.50 ₺" x:Name="visnerecelifiyat" FontWeight="Bold" HorizontalAlignment="Center" >
+
+                </Label>
+
+                <Button x:Name="sepeteklevisnereceli" Height="30" Width="100" BorderThickness="0" >
+                    <Image Source="C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\resimler\sepeteekle.jpg" Stretch="Fill" >
+
+                    </Image>
+
+                </Button>
+
+            </StackPanel>
+            <StackPanel Orientation="Vertical" >
+
+            </StackPanel>
+            <StackPanel Orientation="Vertical" >
+
+            </StackPanel>
+        </StackPanel>
+
+
+
+    </Grid>
+</Page>

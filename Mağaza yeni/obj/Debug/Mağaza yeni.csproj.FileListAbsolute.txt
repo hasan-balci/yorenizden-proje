@@ -1,0 +1,28 @@
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\bin\Debug\Mağaza yeni.exe.config
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\bin\Debug\Mağaza yeni.exe
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\bin\Debug\Mağaza yeni.pdb
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.csprojAssemblyReference.cache
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\MainWindow.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\App.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni_MarkupCompile.cache
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\MainWindow.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.g.resources
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza_yeni.Properties.Resources.resources
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.csproj.GenerateResource.cache
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.exe
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.pdb
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\urunler1.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni_MarkupCompile.lref
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\urunler1.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\MasterPage.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\MasterPage.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\MainPage.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\MainPage.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\girisYap.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\hakkımızda.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\KayitOlSayfa.g.cs
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\girisYap.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\hakkımızda.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\sayfalar\KayitOlSayfa.baml
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\obj\Debug\Mağaza yeni.csproj.CoreCompileInputs.cache
+C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\bin\Debug\resimler\giphy.gif
