@@ -21,6 +21,7 @@ namespace Mağaza_yeni
     /// </summary>
     public partial class MasterPage : Page
     {
+        
         public MasterPage()
         {
             InitializeComponent();
@@ -38,16 +39,24 @@ namespace Mağaza_yeni
             Anasayfa.Background = Brushes.OrangeRed;
 
 
+
         }
 
         private void sepetim_Click(object sender, RoutedEventArgs e)
         {
-
+            maincolumn.Width = new GridLength(1119);
+            Sepetim.Background = Brushes.OrangeRed;
         }
 
         private void magaza_Click(object sender, RoutedEventArgs e)
         {
+            sayfa.Content = new UrunlerSayfa();
 
+            GirisYap.Background = Brushes.White;
+            KayıtOl.Background = Brushes.White;
+            Anasayfa.Background = Brushes.White;
+            Hakkımızda.Background = Brushes.White;
+            Mağaza.Background = Brushes.OrangeRed;
         }
 
         private void iletişim_Click(object sender, RoutedEventArgs e)
@@ -67,6 +76,7 @@ namespace Mağaza_yeni
 
         private void Mağaza_Click(object sender, RoutedEventArgs e)
         {
+            sayfa.Content = new UrunlerSayfa();
             GirisYap.Background = Brushes.White;
             KayıtOl.Background = Brushes.White;
             Anasayfa.Background = Brushes.White;
@@ -107,6 +117,7 @@ namespace Mağaza_yeni
             Anasayfa.Background = Brushes.White;
             Hakkımızda.Background = Brushes.White;
             Mağaza.Background = Brushes.White;
+            
         }
 
         private void KayıtOl_Click(object sender, RoutedEventArgs e)
@@ -117,7 +128,16 @@ namespace Mağaza_yeni
             Anasayfa.Background = Brushes.White;
             Hakkımızda.Background = Brushes.White;
             Mağaza.Background = Brushes.White;
+            
 
+        }
+
+       
+
+        private void sepetkapat_Click(object sender, RoutedEventArgs e)
+        {
+            maincolumn.Width = new GridLength(1519);
+            Sepetim.Background = Brushes.White;
         }
     }
 }

@@ -37,7 +37,7 @@
                     </StackPanel>
                     <Label Content="Şifremi unuttum"/>
                 </StackPanel>
-                <MediaElement  Name="fotogif" Source="giflifoto.gif" Height="261" Width="540" VerticalAlignment="Top" Margin="0,60,0,0" MediaEnded="fotogif_MediaEnded" />
+                <MediaElement  Name="fotogif" Source="C:\Users\Hasan BALCI\source\repos\Mağaza yeni\Mağaza yeni\resimler/giflifoto.gif" Height="261" Width="540" VerticalAlignment="Top" Margin="0,60,0,0" MediaEnded="fotogif_MediaEnded" />
             </StackPanel>
         </Border>
 

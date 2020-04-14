@@ -7,20 +7,25 @@
       mc:Ignorable="d" 
       
       Title="MasterPage"
-      Width="Auto" Height="Auto" >
+      Width="1550" Height="auto" >
 
 
     <ScrollViewer>
-        <Grid  Background="White" Height="auto" >
+        <Grid  Background="White" Height="auto" Width="1519" >
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="34.8"/>
+                <RowDefinition  Height="34.8"/>
                 <RowDefinition Height="105"/>
                 <RowDefinition Height="51"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="200.8"/>
                 <RowDefinition Height="140.8" />
             </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition x:Name="maincolumn" Width="1519"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
 
             <Border Background="#FF1D1D1D" Grid.Row="0" Margin="0,0,0.2,0.2"/>
             <Border Background="#FF20BA3D" Margin="0,35,0.2,0" Grid.RowSpan="2"/>
@@ -46,7 +51,7 @@
             </Border>
             <Border Margin="0,35,0.2,0" Grid.RowSpan="2">
                 <DockPanel>
-                    <Button x:Name="sepet" Height="34" Width="85" HorizontalAlignment="Right" Margin="0,0,50,0" BorderThickness="1" BorderBrush="GreenYellow" Click="sepet_Click">
+                    <Button x:Name="sepet" Height="34" Width="85" HorizontalAlignment="Right" Margin="0,0,50,0" BorderThickness="1" BorderBrush="GreenYellow" Click="sepetim_Click">
 
                         <Image Source="/resimler/sepet1.png" Height="36" Width="87" HorizontalAlignment="Right"/>
                     </Button>
@@ -75,10 +80,30 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
 
 
-                    <Button   Content="Anasayfa" x:Name="Anasayfa" Width="91" Height="51" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" Background="#FFFF602A" BorderThickness="0" Click="Anasayfa_Click" 
+                    <Button   Content="Anasayfa" x:Name="Anasayfa" Width="91" Height="51" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" Background="#FFFF602A" BorderThickness="0" Click="Anasayfa_Click" >
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="Green"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkGoldenrod"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
                           
                        
-                    />
+                    
 
 
 
@@ -97,7 +122,7 @@
                          />
                     <Button  Content="Sepetim" x:Name="Sepetim" Width="83" Height="51" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" BorderThickness="0" Background="White"
                          
-                         Click="Sepetim_Click_1"
+                         Click="sepetim_Click"
                          />
                     <Button  Content="Hesabım" x:Name="Hesabım" Width="87" Height="51" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" BorderThickness="0" Background="White"
                          Click="Hesabım_Click"
@@ -117,11 +142,11 @@
 
 
             </Border>
-            
+
             <Frame  Grid.Row="3" x:Name="sayfa">
-                    
+
             </Frame>
-                
+
             <Border Grid.Row="4" Margin="0,1.6,0.2,46.2" >
 
                 <StackPanel Margin="200,0,1150,0">
@@ -263,9 +288,28 @@
                 <Image 
                     Source="/resimler/WhatsApp_Logo_1.png" Width="64" HorizontalAlignment="Right" Margin="0,9,39,-64" />
             </Border>
+            <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Height="100" Background="#FF282222" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Sepetim" Foreground="White" FontSize="18" Margin="20,20,0,10" HorizontalAlignment="Left"/>
+                    <Label Content="(0 Adet)"  FontSize="18" Margin="0,20,0,10" HorizontalAlignment="Left" Foreground="LightGreen" />
 
+                    <Button  x:Name="sepetkapat" Background="White" Content="X" Foreground="Black" FontSize="16" Width="26" Height="26" VerticalAlignment="Center" Margin="200,15,0,25" Click="sepetkapat_Click"> 
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1" >
+                <Label Content="Sepetinizde Ürün Bulunmamaktadır." Background="White" Foreground="DarkGray" FontSize="16" Margin="20,0,0,0"/>
+            </Border>
+
+            
 
         </Grid>
+
     </ScrollViewer>
 
 </Page>

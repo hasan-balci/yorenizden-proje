@@ -87,7 +87,7 @@ namespace Mağaza_yeni.sayfalar
         {
             kaydirpanel.Margin = new Thickness(a, 1, 1, 1);
 
-            if (a > 0)
+            if (a < 2)
             {
                 a = 1;
             }
@@ -103,11 +103,16 @@ namespace Mağaza_yeni.sayfalar
             kaydirpanel.Margin = new Thickness(a, 1, 1, 1);
             if(a<-702)
             {
-                a = 234;
+                a = 1;
             }
-
+            else
             a -= 234;
             
+        }
+
+        private void anasayfaGif_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            anasayfaGif.Position = new TimeSpan(0, 0, 1);
         }
     }
 }
